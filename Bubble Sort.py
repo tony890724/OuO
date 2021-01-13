@@ -20,3 +20,5 @@ while i > 1:
             num[j] = num[j+1]
             num[j+1] = temp
     i -= 1
+
+print(num)
