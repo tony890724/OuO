@@ -16,9 +16,9 @@ i = length
 while i > 1:
     for j in range(i-1):
          if(num[j] > num[j+1]):
-            temp = num[j]
-            num[j] = num[j+1]
-            num[j+1] = temp
+            num[j] = num[j] + num[j+1]
+            num[j+1] = num[j] - num[j+1]
+            num[j] = num[j] - num[j+1]
     i -= 1
 
 print(num)
