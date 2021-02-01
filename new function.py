@@ -6,7 +6,7 @@ def bubble_sort(num):
                 num[j] = num[j] + num[j+1]
                 num[j+1] = num[j] - num[j+1]
                 num[j] = num[j] - num[j+1]
-        i -= 1 #因為已將最小的數字排至最後方 所以下一次可以少判斷一個數
+        i -= 1 #因為已將最小的數字排至最後方 所以下一次可以少比較一個數
     return num #回傳list
 
 quantity = int(input()) #輸入你的list有幾個數字
